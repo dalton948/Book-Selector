@@ -12,20 +12,19 @@ import random
 #   - Learn how to manipulate the csv
 # Find Books based on Author or Genre
 
-intro = """1. Find a Book Randomly
-2. Mark a Book as 'Read'
-3. Generate suggestions based on Genre
+# Used to call the intro when needed
+
+
+def master_intro():
+    intro = """Welcome to the Magnificent Book Selector! Please select an option below to begin:
+1. Find a Book Randomly
+2. Generate suggestions based on Genre
 """
-print(intro)
-intro_question = input("Enter a Number: ")
-
-# Might be used for the questionaire process
+    print(intro)
+    intro_question = input("Enter a Number: ")
 
 
-# def questionaire():
-# for answer in questions
-# print()
-
+master_intro()
 
 # while True:
 #     question1 = input("This is the first question: ")
