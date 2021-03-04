@@ -1,0 +1,66 @@
+INFO:root:Starting
+INFO:root:Starting
+INFO:root:Starting
+ERROR:root:invalid value entered !
+INFO:root:Starting
+ERROR:root:invalid value entered %
+INFO:root:Starting
+INFO:root:Ending
+INFO:root:Starting
+INFO:root:Starting
+INFO:root:Starting
+ERROR:root:invalid value entered 
+INFO:root:Starting
+ERROR:root:invalid value entered 
+INFO:root:Starting
+ERROR:root:invalid value entered 
+INFO:root:Starting
+ERROR:root:invalid value entered 
+INFO:root:Starting
+ERROR:root:invalid value entered 
+INFO:root:Starting
+ERROR:root:invalid value entered &
+INFO:root:Starting
+INFO:root:Ending
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Choosing
+ERROR:root:invalid value entered: & C:/Users/Accou/AppData/Local/Programs/Python/Python38/python.exe "c:/Users/Accou/Documents/Coding Projects/Book Selector/Book-Selector/Book Selector.py"
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Exit
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Exit
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Exit
+INFO:root:Choosing
+ERROR:root:invalid value entered: 
+INFO:root:Choosing
+ERROR:root:invalid value entered: 4
+INFO:root:Choosing
+ERROR:root:invalid value entered: #
+INFO:root:Choosing
+ERROR:root:invalid value entered: ^
+INFO:root:Choosing
+ERROR:root:invalid value entered: .
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Exit
+INFO:root:Choosing
+INFO:root:Selected book: <function random_book at 0x000002BA5CF46550>
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Exit
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Exit
+INFO:root:Choosing
+INFO:root:Choosing
+INFO:root:Exit

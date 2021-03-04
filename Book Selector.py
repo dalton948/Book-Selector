@@ -1,7 +1,7 @@
 import csv
 import random
+import logging
 
-# CSV Structure
 # Objective:
 #   - Get unique Genre's and display 5 at random.
 #       -Funcitons: Gives a random 5 numbers -> [2, 3, 50, 40, 20]
@@ -9,6 +9,9 @@ import random
 #   - Learn how to manipulate the csv
 # Find Books based on Author or Genre
 header = ['Title', 'Author', 'Genre', 'Height', 'Publisher']
+logging.basicConfig(filename='errors.log', level=logging.INFO)
+
+# Function for the intro questions and starting loop.
 
 
 def master_intro():
@@ -40,7 +43,11 @@ def master_continue_choice():
     if continue_choice.lower() == 'y':
         master_book_selector()
     elif continue_choice.lower() == 'n':
-        print('Exiting')
+        logging.info("Exit")
+        print("""
+        Thank you for choosing the Magnificent Book Selector!
+            
+        """)
         exit()
     else:
         print('Please select Y or N.')
@@ -50,23 +57,35 @@ def master_continue_choice():
 # Master function that runs the other functions based off selection
 def master_book_selector():
     try:
+        logging.info("Choosing")
         intro_results = master_intro()
         if int(intro_results) == 1:
             random_book()
             master_continue_choice()
         elif int(intro_results) == 2:
             # this will be the genre selector perhaps
-            print('almost there')
+            print("""
+            Feature not implemented yet, please choose another option
+
+            """)
+            master_book_selector()
         elif int(intro_results) == 3:
-            print('Exiting')
+            logging.info("Exit")
+            print("""
+            Thank you for choosing the Magnificent Book Selector!
+            
+            """)
             exit()
         else:
+            logging.error("invalid value entered: {}".format(intro_results))
             print('Invalid input, please try again.')
             master_book_selector()
     except ValueError:
+        logging.error("invalid value entered: {}".format(intro_results))
         print("Invalid value, please try again.")
         master_book_selector()
     except TypeError:
+        logging.error("invalid value entered: {}".format(intro_results))
         print("Invalid type, please try again.")
         master_book_selector()
 
